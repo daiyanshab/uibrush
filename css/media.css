@@ -1,0 +1,64 @@
+/* 
+     Author : Azhar Hussain Masum
+     Email: azharhussain4647@gmail.com
+     Website: http://www.azharmasum.com/
+     Facebook: https://www.facebook.com/azhar.hussainmasum
+*/
+
+@media (max-width:499px){
+    .project img{
+        width: 100%;
+    }
+}
+@media (max-width:767px){
+    .main-menu{
+        background-color:#222!important;
+        padding: 15px 0px;
+        z-index: 1;
+    }
+
+}
+@media (min-width:767px){
+    .overlay:hover .bb{
+        width:297px;
+    }
+}
+@media (min-width:500px) and (max-width: 991px){
+    .project a{
+        padding: 10px 15px;
+    }
+}
+@media (max-width:390px){
+    .contact-form input[type="submit"]{
+        background-color: #39C9DA;
+        color: #FFF;
+        padding: 10px 30px;
+        font-weight: bold;
+        font-size:18px;
+    } 
+
+}
+
+/*---Large Device---*/
+@media (min-width:1200px){
+    .header-text h1{
+        font-weight: bold;
+        max-width: 75%;
+        margin: 0 auto;
+        color: white;
+        font-size: 33px
+    }
+    .title p {
+        max-width: 46%;
+        margin: 0 auto;
+    }
+    .project a{
+        font-size: 20px;
+    }
+    .contact-info p{
+        max-width: 89%;
+    }
+
+}
+
+

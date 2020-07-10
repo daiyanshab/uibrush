@@ -1,0 +1,302 @@
+/* 
+      Author : Azhar Hussain Masum
+     Email: azharhussain4647@gmail.com
+     Website: http://www.azharmasum.com/
+     Facebook: https://www.facebook.com/azhar.hussainmasum
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    color:#5F5E5F;
+}
+p{
+    color: gray;
+}
+/* ----Nav Start Here----*/
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding-top: 15px;
+
+}
+.navbar-default .navbar-brand {
+    color: #39C9DA;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-default .navbar-brand:hover{
+    color: #39C9dA;
+}
+
+.main-menu ul li a {
+    color: white!important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: yellow!important;
+    background-color: transparent;
+}
+@keyframes menu_sticky {
+    0%   {margin-top:-120px;opacity: 0;}
+    50%  {margin-top: -64px;opacity: 0;}
+    100% {margin-top: 0;opacity: 1;}
+}
+.navbar-fixed-top{
+    padding: 10px 0;
+    background-color:#232425;
+    animation-name: menu_sticky;
+    animation-duration: 0.90s;
+    animation-timing-function: ease-in-out;
+}
+/* ----Nav End Here----*/
+
+/* ----Header Start Here----*/
+header{
+    background: url("../img/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+.header-text{
+    text-align: center;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+
+}
+.header-text h1{
+    font-weight: bold;
+    color: whitesmoke;
+}
+.btn-custom{
+    font-weight:bold;
+    color: #FAFAFA;
+    text-decoration: none;
+    background-color: #39C9DA;
+    padding: 15px 30px;
+    transition: 0.65s ease all;
+}
+.btn-custom:hover{
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #EFEFEF;
+}
+/* ----Header End Here----*/
+
+/* ----About-Us Start Here----*/
+#about{
+    background-color: #FAFAFA;
+    padding: 60px 0px 40px 0px;
+}
+.about{
+    text-align: center;
+    padding-bottom:60px;
+}
+.about p{
+    color: #BFBFBF;
+    color: grey;
+}
+.about-demo {
+    padding-bottom: 20px;
+}
+.overlay h5{
+    margin-bottom:24px;
+}
+
+.overlay {
+    position: relative;
+}
+.border-overlay {
+    position: absolute;
+    width: 100%;
+    top:35px;
+
+}
+.bb {
+    width:100px;
+    height:3px;
+    background-color: #03A9F4;
+    transition:width 0.84s ease-in-out;
+}
+.about-demo p{
+    font-size: 13px;
+}                   /* ----About-Us End Here----*/
+
+/* ----Portfolio Start Here----*/
+#portfolio{
+    background: #F4F4F4;
+    padding: 50px 0px 30px 0px;
+}
+.portfolio{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.thumbnail {
+    padding: 0;
+    border-radius:0;
+}
+.project{
+    position: relative;
+}
+.caption p{
+    margin: 0;
+}
+.caption p b{
+    color: #605F60;
+    font-size: 14px;
+}
+.overlay-pr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.5);
+    background-color:rgba(93, 92, 92, 0.43);
+    transition:all 0.66s ease;
+    -moz-transition: all 0.66s ease;
+    -webkit-transition: all 0.66s ease;
+
+}
+.project a{
+    padding: 12px 28px;
+    color:#FFF;
+    font-weight: bold;
+    border: 2px solid #CAC8C7;
+    position: absolute;
+    top:80%;
+    left:30%;
+    opacity: 0;
+    transform: translate(-80%,-30%);
+    -webkit-transform: translate(-80%,-30%);
+    -moz-transform: translate(-80%,-30%);
+    transition:all 0.66s ease;
+    -moz-transition: all 0.66s ease;
+    -webkit-transition: all 0.66s ease;
+}
+.project a:hover{
+    background: #232425;
+    border-color: #232425;
+}
+.project:hover .overlay-pr{
+    opacity: 1;
+    transform: scale(1);
+}
+.project:hover a{
+    opacity: 1;
+    top:50%;
+    left:50%;
+    text-decoration: none;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+}                                           /* ----Portfolio End Here----*/
+
+/* ----Services Start Here----*/
+#service{
+    background-color: #FAFAFA;
+    padding: 40px 0px 20px 0px;
+}
+.service{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.content{
+    background-color: #FFFFFF;
+    border:2px solid #EAEAEA;
+    padding:25px 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition:all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.content i{
+    color: #39C9DA;
+}
+.content hr{
+    width: 77px;
+    margin:16px auto;
+}
+.content a {
+    color: #FFF;
+    padding: 10px 20px;
+    background: #4B4A4B;
+    transition: 0.57s ease all;
+}
+.content a:hover {
+    background: white;
+    color: #4B4A4B;
+    text-decoration: none;
+}
+
+.content:hover{
+    background: #39C9DA;
+}
+.content:hover .hover{
+    color: #FFFFFF;
+}                       /* ----Services End Here----*/
+
+/* ----Contact-Us Start Here----*/
+#contact{
+    background: #F4F4F4;
+    padding: 60px 0px 40px 0px;
+}
+.contact{
+    text-align: center;
+    padding-bottom: 35px;
+
+}
+.contact-info{
+    padding:15px 0px;
+}
+.contact-info hr{
+    width: 106px;
+    height: 2px;
+    border-color:#39C9DA ;
+    background: #39C9DA;
+
+}
+.contact-form{
+    padding: 25px 0px;
+}
+.contact-form input[type="submit"]{
+    background-color: #39C9DA;
+    color: #FFF;
+    padding: 12px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}                      /* ----Contact-Us End Here----*/
+/* ----Bottom-Footer Start Here----*/
+#bottom-footer{
+    background: #39C9DA;
+    padding:18px 0 0;
+    min-height: 50px;
+    text-align: center;
+}
+#bottom-footer p{
+    color: #FFF;
+    font-size: 14px;
+}
+#bottom-footer a{
+    color: #FFF;
+    font-size: 14px;
+}
+
+/* ----Bottom-Footer End Here----*/
+
+
+
+/*=====================            Designed By Azhar Hussain Masum  =======================================================*/
